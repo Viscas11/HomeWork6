@@ -6,6 +6,7 @@ public class Main {
         task4();
         task5();
         task6();
+        task7();
     }
 
     public static void task1() {
@@ -71,15 +72,28 @@ public class Main {
                 System.out.println(" Месяц " + month + ", сумма накопления " + i);
         }
     }
+
     public static void task6() {
         System.out.println("Задача 6");
         double i = 15_000;
         int month = 0;
-        while (month <= 9*12 ) {
+        while (month <= 9 * 12) {
             month = month + 1;
             i = i + 15_000 * 0.07;
             if (month % 6 == 0)
                 System.out.println(" Месяц " + month + ", сумма накопления " + i);
+        }
+    }
+
+    public static void task7() {
+        System.out.println("Задача 7");
+        int friday = 1;
+        System.out.println(" Сегодня пятница, " + friday + "-е число. Необходимоподготовить отчет");
+            while (friday < 31) {
+                friday = friday + 7;
+                if (friday < 31) {
+                System.out.println(" Сегодня пятница, " + friday + "-е число. Необходимо подготовить отчет");
+            }
         }
     }
 }
