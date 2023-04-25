@@ -55,6 +55,7 @@ public class Main {
             month = month + 1;
             i = i + 15_000 * 0.07 ;
                 System.out.println(" Месяц " + month + ", сумма накопления " + i);
+
         }
     }
 }
