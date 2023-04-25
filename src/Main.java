@@ -3,6 +3,7 @@ public class Main {
         task1();
         task2();
         task3();
+        task4();
     }
 
     public static void task1() {
@@ -41,8 +42,19 @@ public class Main {
         while (year < 10) {
             int populationPerYear = people / 1000 * (natalityPer1000 - dethPer1000);
             people = people + populationPerYear;
-          year = year + 1;
+            year = year + 1;
             System.out.println(" Год " + year + ", численность населения составляет " + people);
+        }
+    }
+
+    public static void task4() {
+        System.out.println("Задача 4");
+        double i = 15_000;
+        int month = 0;
+        while (i <= 12_000_000){
+            month = month + 1;
+            i = i + 15_000 * 0.07 ;
+                System.out.println(" Месяц " + month + ", сумма накопления " + i);
         }
     }
 }
