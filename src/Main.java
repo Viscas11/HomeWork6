@@ -7,6 +7,7 @@ public class Main {
         task5();
         task6();
         task7();
+        task8();
     }
 
     public static void task1() {
@@ -89,10 +90,21 @@ public class Main {
         System.out.println("Задача 7");
         int friday = 1;
         System.out.println(" Сегодня пятница, " + friday + "-е число. Необходимоподготовить отчет");
-            while (friday < 31) {
-                friday = friday + 7;
-                if (friday < 31) {
+        while (friday < 31) {
+            friday = friday + 7;
+            if (friday < 31) {
                 System.out.println(" Сегодня пятница, " + friday + "-е число. Необходимо подготовить отчет");
+            }
+        }
+    }
+
+    public static void task8() {
+        System.out.println("Задача 8");
+        int comet = 0;
+        while (comet < 2023) {
+            comet = comet + 79;
+            if (comet > 1823) {
+                System.out.println(comet);
             }
         }
     }
