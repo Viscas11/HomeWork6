@@ -53,51 +53,47 @@ public class Main {
 
     public static void task4() {
         System.out.println("Задача 4");
-        double i = 15_000;
         int month = 0;
-        while (i <= 12_000_000) {
+       double total = 15000;
+        while (total <= 12_000_000) {
+            total = total * (0.07 + 1);
             month = month + 1;
-            i = i + 15_000 * 0.07;
-            System.out.println(" Месяц " + month + ", сумма накопления " + i);
+            System.out.println(" Месяц " + month + ", сумма накопления " + total);
         }
     }
 
     public static void task5() {
         System.out.println("Задача 5");
-        double i = 15_000;
         int month = 0;
-        while (i <= 12_000_000) {
+        double total = 15000;
+        while (total <= 12_000_000) {
+            total = total * (0.07 + 1);
             month = month + 1;
-            i = i + 15_000 * 0.07;
             if (month % 6 == 0)
-                System.out.println(" Месяц " + month + ", сумма накопления " + i);
+                System.out.println(" Месяц " + month + ", сумма накопления " + total);
         }
     }
 
     public static void task6() {
         System.out.println("Задача 6");
-        double i = 15_000;
         int month = 0;
+        double total = 15000;
         while (month <= 9 * 12) {
             month = month + 1;
-            i = i + 15_000 * 0.07;
+            total = total * (0.07 + 1);
             if (month % 6 == 0)
-                System.out.println(" Месяц " + month + ", сумма накопления " + i);
+                System.out.println(" Месяц " + month + ", сумма накопления " + total);
         }
     }
 
     public static void task7() {
         System.out.println("Задача 7");
         int friday = 1;
-        System.out.println(" Сегодня пятница, " + friday + "-е число. Необходимоподготовить отчет");
-        while (friday < 31) {
-            friday = friday + 7;
-            if (friday < 31) {
+        while (friday <= 31) {
                 System.out.println(" Сегодня пятница, " + friday + "-е число. Необходимо подготовить отчет");
-            }
+                friday += 7;
         }
     }
-
     public static void task8() {
         System.out.println("Задача 8");
         int comet = 0;
